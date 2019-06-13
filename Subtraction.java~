@@ -1,0 +1,44 @@
+/**
+ * Represents an subtraction problem based on two operands.
+ */
+public class Subtraction extends Arithmetic{
+
+    
+    /**
+     * Defaults the two operands to a random number
+     * between 1-9
+     */
+    public Subtraction(){
+        super();
+    }
+    
+
+    
+    /**
+     * Returns the question in a readable format
+     * 
+     *  @return      the addition problem between the operands
+     */ 
+    public String getQuestion(){
+        return getLeftOperand() + " - " + getRightOperand() + " = ";
+    }
+
+    
+    
+    /**
+     * Checks if the answer that is passed through is correct
+     * 
+     *  @param answer the answer that will be checked
+     *  @return if the answer is correct or not
+     */ 
+    public boolean checkAnswer(int answer){
+        return (answer == (getLeftOperand() - getRightOperand()));
+    }
+
+    
+
+    
+    
+    
+    
+}
